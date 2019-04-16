@@ -1,0 +1,12 @@
+<beans>
+	<bean name="A" class="cn.mypro.bean.A">
+		<property name="name" value="tom">
+		</property>
+	</bean>
+	
+	<bean name="B" class="cn.mypro.bean.B" scope="prototype">
+		<property name="a" ref="A">
+		</property>
+	</bean>
+
+</beans>
